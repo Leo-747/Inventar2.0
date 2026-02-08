@@ -12,7 +12,7 @@ A logic-based shop and inventory system developed in Python to practice Object-O
 * **File Handling:** Python `os` module
 
 ## 🕹️ How to Use
-1. **Run the program:** `Account_Manager_Python.py`
+1. **Run the program:** `Account_Manager.py`
 2. **Login:** Enter your name to create a new save or load an existing one from `Accounts.json`.
 3. **Actions:** Type `kaufen`, `verkaufen`, `status` or `ausgeben` to interact with the system.
 
