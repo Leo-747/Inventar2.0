@@ -64,7 +64,6 @@ def start_new():
 def loading():
     choice = input("Do you want to load a save game? (y/n): ").lower()
     if choice == "y":
-        # Hier ist die Änderung auf Accounts.json
         if os.path.exists("Accounts.json"):
             with open("Accounts.json", "r") as c:
                 dat = json.load(c)
@@ -112,7 +111,6 @@ while True:
         manager.add_save(filename)
         with open(f"{filename}.json", "w") as f:
             json.dump(player.get_data(), f)
-        # Und hier beim finalen Speichern
         with open("Accounts.json", "w") as f:
             json.dump(manager.accounts_list, f)
             print("Account saved and exported successfully.")
